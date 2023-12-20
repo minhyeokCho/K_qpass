@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, viewport-fit=cover, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+	<meta name="format-detection" content="telephone=no, address=no, email=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="default">
+	<link rel="stylesheet" href="./assets/css/common.css">
+	<link rel="stylesheet" href="./assets/css/lib/swiper-bundle.min.css">
+	<script type="text/javascript" src="./assets/js/lib/jquery-3.6.0.min.js"></script>
+	<script type="text/javascript" src="./assets/js/lib/swiper-bundle.min.js"></script>
+	<script type="text/javascript" src="./assets/js/common.js"></script>
+	<title>POS KIOSK</title>
+	<link rel="stylesheet" href="./assets/css/sub.css">
+</head>
+<body>
+<!-- #WRAP -->
+<div id="wrap">
+	<!-- #header -->
+	<header id="header">
+		<div class="inner">
+			<h1>
+				<a href="main.html"><img src="assets/images/logo.png" alt="QPASS"></a>
+			</h1>
+			<a href="#n" class="btn_allmenu"></a>
+
+			<nav>
+				<ul class="menu_wrap">
+					<li class="dept_01">
+						<a href="#">회사소개</a>
+						<ul class="dept_02">
+							<li><a href="company_01.html">큐패스코리아</a></li>
+							<li><a href="company_02.html">특허 및 보유기술</a></li>
+							<li><a href="company_03.html">찾아오시는 길</a></li>
+						</ul>
+					</li>
+					<li class="dept_01">
+						<a href="#">솔루션소개</a>
+						<ul class="dept_02">
+							<li><a href="solution_01.html">온라인 대행판매</a></li>
+							<li><a href="solution_02.html">모바일 티켓</a></li>
+							<li><a href="solution_03.html">시설 운영 솔루션</a></li>
+							<li><a href="solution_04.html">픽업톡/큐라인</a></li>
+							<li><a href="solution_05.html">CheckQ</a></li>
+							<li><a href="solution_06.html">QAD(큐애드)</a></li>
+						</ul>
+					</li>
+					<li class="dept_01">
+						<a href="#">이용안내</a>
+						<ul class="dept_02">
+							<li><a href="qna.html">자주묻는질문</a></li>
+							<li><a target="_blank" href="https://www.instagram.com/qpasskorea/">인스타그램</a></li>
+							<li><a target="_blank" href="https://blog.naver.com/qpasskorea">블로그</a></li>
+							<li><a target="_blank" href="https://www.youtube.com/@ready-q">유튜브</a></li>
+						</ul>
+					</li>
+					<li class="dept_01">
+						<a href="#">쇼핑몰</a>
+						<ul class="dept_02">
+							<li><a target="_blank" href="https://smartstore.naver.com/readyqmall">네이버스마트스토어</a></li>
+							<li><a target="_blank" href="https://store.kakao.com/qpasskorea?from=actionbtn&__ld__=&oldRef=">카카오톡스토어</a></li>
+						</ul>
+					</li>
+				</ul>
+				<div class="bg_nav"></div>
+				<a href="#n" class="btn_allmenu_close"></a>
+			</nav>
+		</div>
+		<!-- floating -->
+		<div class="floating">
+			<a href="https://pf.kakao.com/_fIewT/chat" target="_blank">
+				<img src="assets/images/kakao_cs.png" alt="문의하기">
+			</a>
+		</div>
+		<!--// floating -->
+	</header>
+	<!--// #header -->
+
+	<!-- #CONTENTS -->
+	<div id="contents" class="Pos_Kiosk"><!-- POS KIOSK class="Pos_Kiosk" -->
+		<!-- 서브 타이틀 영역 -->
+		<div class="pos_tit_area">
+			<div class="inner">
+				<div class="txt_wrap">
+					<h2>
+						<img src="assets/images/pos_tit.png" alt="POS KIOSK">
+					</h2>
+					<p>업장 영업 현황을 알려주는 기특한 POS!</p>
+					<p>방문고객을 기억하는 똑똑한 KIOSK!</p>
+				</div>
+			</div>
+		</div>
+		<!--// 서브 타이틀 영역 -->
+
+		<!-- pos & kiosk content -->
+		<div class="pk_cotn">
+			<div class="inner">
+				<section>
+					<div class="sec_tit">
+						<p class="des">
+							다양한 업종, 다양한 포스?<br>카페, 식음, 입장권, 레저 4종을 한번에!
+						</p>
+						<p class="txt">직관적 디자인, 손쉬운 기능</p>
+						<h3>POS</h3>
+					</div>
+					<div class="sldie_tab">
+						<!-- 탭영역 -->
+						<div class="tab_area js-tab">
+							<ul>
+								<li data-tab="slide_tab1" class="on">
+									<a href="#">화면구성</a>
+								</li>
+								<li data-tab="slide_tab2">
+									<a href="#">CMS</a>
+								</li>
+							</ul>
+						</div>
+						<!--// 탭영역 -->
+
+						<!-- 슬라이드 영역 -->
+						<div class="slide_area">
+							<ul class="js-tab-content">
+								<li data-tab="slide_tab1" class="on">
+									<div class="slide_wrap">
+										<div class="pos_slide view_slide swiper">
+											<div class="swiper-pagination pos_page view_page"></div>
+											<div class="swiper-wrapper">
+												<div class="item swiper-slide">
+													<figure class="img">
+														<img src="assets/images/pos_01.png" alt="레저포스">
+													</figure>
+													<div class="txt_wrap">
+														<p>키즈카페, 레저산업에 안성맞춤인</p>
+														<strong>레저포스</strong>
+													</div>
+												</div>
+												<div class="item swiper-slide">
+													<figure class="img">
+														<img src="assets/images/pos_02.png" alt="숙박포스">
+													</figure>
+													<div class="txt_wrap">
+														<p>룸 컨디션부터 고객관리까지 한 눈에!</p>
+														<strong>숙박 포스</strong>
+													</div>
+												</div>
+												<div class="item swiper-slide">
+													<figure class="img">
+														<img src="assets/images/pos_03.png" alt="승선포스">
+													</figure>
+													<div class="txt_wrap">
+														<p>승/하선, 입/출항의 기록을 꼼꼼하게 남겨두는</p>
+														<strong>승선 포스</strong>
+													</div>
+												</div>
+												<div class="item swiper-slide">
+													<figure class="img">
+														<img src="assets/images/pos_04.png" alt="식음포스">
+													</figure>
+													<div class="txt_wrap">
+														<p>다양한 음료, 등록부터 통계까지</p>
+														<strong>식음 포스</strong>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="arr_swiper">
+											<button type="button" class="view_arr arr_prev"><span class="blind">이전</span></button>
+											<button type="button" class="view_arr arr_next"><span class="blind">다음</span></button>
+										</div>
+										<div class="view_bullet pos_bul"></div>
+									</div>
+								</li>
+								<li data-tab="slide_tab2">
+									<div class="slide_wrap">
+										<div class="pos_slide cms_slide swiper">
+											<div class="swiper-pagination pos_page cms_page"></div>
+											<div class="swiper-wrapper">
+												<div class="item swiper-slide">
+													<figure class="img">
+														<img src="assets/images/pos_temp.png" alt="레저포스">
+													</figure>
+													<div class="txt_wrap">
+														<p>서브설명1</p>
+														<strong>CMS1</strong>
+													</div>
+												</div>
+												<div class="item swiper-slide">
+													<figure class="img">
+														<img src="assets/images/pos_temp.png" alt="레저포스">
+													</figure>
+													<div class="txt_wrap">
+														<p>서브설명2</p>
+														<strong>CMS2</strong>
+													</div>
+												</div>
+												<div class="item swiper-slide">
+													<figure class="img">
+														<img src="assets/images/pos_temp.png" alt="레저포스">
+													</figure>
+													<div class="txt_wrap">
+														<p>서브설명3</p>
+														<strong>CMS3</strong>
+													</div>
+												</div>
+												<div class="item swiper-slide">
+													<figure class="img">
+														<img src="assets/images/pos_temp.png" alt="레저포스">
+													</figure>
+													<div class="txt_wrap">
+														<p>서브설명3</p>
+														<strong>CMS3</strong>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="arr_swiper">
+											<button type="button" class="cms_arr arr_prev"><span class="blind">이전</span></button>
+											<button type="button" class="cms_arr arr_next"><span class="blind">다음</span></button>
+										</div>
+										<div class="cms_bullet pos_bul"></div>
+									</div>
+								</li>
+							</ul>
+						</div>
+						<!--// 슬라이드 영역 -->
+					</div>
+				</section>
+				<section>
+					<div class="sec_tit">
+						<p class="des">
+							매장별, 업종별 특성에 맞춘 기능 커스터마이징, 다양한 크기의 모델지원(15, 20, 32인치)
+							<br>국내 키오스크 중 가장 경제적인 가격
+						</p>
+						<p class="txt">다양한 시설, 행사장에서<br> 맞춤 사용되는</p>
+						<h3>KIOSK</h3>
+						<div class="kiosk_li swiper">
+							<div class="swiper-wrapper">
+								<div class="item swiper-slide">
+									<figure class="img">
+										<img src="assets/images/kiosk_01.png">
+									</figure>
+								</div>
+								<div class="item swiper-slide">
+									<figure class="img">
+										<img src="assets/images/kiosk_02.png">
+									</figure>
+								</div>
+								<div class="item swiper-slide">
+									<figure class="img">
+										<img src="assets/images/kiosk_03.png">
+									</figure>
+								</div>
+								<div class="item swiper-slide">
+									<figure class="img">
+										<img src="assets/images/kiosk_04.png">
+									</figure>
+								</div>
+								<div class="item swiper-slide">
+									<figure class="img">
+										<img src="assets/images/kiosk_05.png">
+									</figure>
+								</div>
+								<div class="item swiper-slide">
+									<figure class="img">
+
+									</figure>
+								</div>
+							</div>
+						</div>
+						<ul class="tag_li">
+							<li>
+								<span>#행사장</span>
+							</li>
+							<li>
+								<span>#카페</span>
+							</li>
+							<li>
+								<span>#테마파크</span>
+							</li>
+							<li>
+								<span>#전시관</span>
+							</li>
+							<li>
+								<span>#워터파크</span>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section>
+					<div class="sec_tit">
+						<p class="txt">실제 사장님이 들려주는</p>
+						<h3>사용후기</h3>
+						<div class="review_slide swiper">
+							<div class="swiper-wrapper">
+								<div class="item swiper-slide">
+									<div class="rv_tit">
+										<p class="tit_01">통합솔루션(POS+KIOSK) 사용</p>
+										<p class="tit_02">용인 h테마파크</p>
+									</div>
+									<div class="star">
+										<span></span><span></span><span></span><span></span><span></span>
+									</div>
+									<div class="review">
+										<p>포스를 사용하고 나서 부턴<br>피크타임 영업이 혼자서 가능해요!</p>
+										<figure class="img">
+											<img src="assets/images/rv_temp.png">
+										</figure>
+									</div>
+								</div>
+								<div class="item swiper-slide">
+									<div class="rv_tit">
+										<p class="tit_01">통합솔루션(POS+KIOSK) 사용</p>
+										<p class="tit_02">용인 h테마파크</p>
+									</div>
+									<div class="star">
+										<span></span><span></span><span></span><span></span><span></span>
+									</div>
+									<div class="review">
+										<p>포스를 사용하고 나서 부턴<br>피크타임 영업이 혼자서 가능해요! 피크타임 영업이 혼자서 가능해요!</p>
+										<figure class="img">
+											<img src="assets/images/kiosk_01.png">
+										</figure>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+			</div>
+		</div>
+		<!--// pos & kiosk content -->
+	</div>
+	<!-- // #CONTENTS -->
+
+	<!-- floating -->
+	<div class="floating">
+		<a href="https://pf.kakao.com/_fIewT/chat" target="_blank">
+			<img src="assets/images/kakao_cs.png" alt="문의하기">
+		</a>
+	</div>
+	<!--// floating -->
+
+	<!-- #footer -->
+	<footer id="footer">
+		<div class="inner">
+			<h1>큐패스코리아(주)</h1>
+			<div class="f_info">
+				<div class="group tp_01">
+					<p>대표자성명: 정용황</p>
+					<p>사업자등록번호 : 344-88-01057</p>
+				</div>
+				<p>본사 : 경기 용인시 수지구 광교중앙로 338, C동 802호(상현동, 광교우미뉴브)</p>
+				<p>영업기획실 : 경기 용인시 수지구 광교중앙로 338, C동 815호(상현동, 광교우미뉴브)</p>
+				<p>연구개발실 : 경기 용인시 수지구 광교중앙로 338, C동 311호(상현동, 광교우미뉴브)</p>
+				<div class="group tp_02">
+					<p>대표번호 : 1522-0197 </p>
+					<p>Fax : 02-6916-1988</p>
+					<p>E-mail : help@qpasskorea.kr</p>
+				</div>
+			</div>
+			<div class="f_sns">
+				<ul>
+					<li><a href="https://www.facebook.com/qpasskorea/" title="facebook" target="_blank"><img src="assets/images/sns_fb.svg" alt="facebook"></a></li>
+					<li><a href="https://blog.naver.com/qpasskorea" title="blog" target="_blank"><img src="assets/images/sns_blog.svg" alt="blog"></a></li>
+					<li><a href="https://www.instagram.com/qpasskorea/" title="instagram" target="_blank"><img src="assets/images/sns_insta.svg" alt="instagram"></a></li>
+					<li><a href="https://www.youtube.com/@ready-q" title="youtube" target="_blank"><img src="assets/images/sns_ytb.svg" alt="youtube"></a></li>
+					<li><a href="http://pf.kakao.com/_fIewT" title="kakao" target="_blank"><img src="assets/images/sns_kakao.svg" alt="kakaotalk"></a></li>
+				</ul>
+			</div>
+		</div>
+	</footer>
+	<!--// #footer -->
+</div>
+<!-- // WRAP -->
+</body>
+</html>

@@ -1,0 +1,108 @@
+@charset "utf-8";
+@import url(setting.css);
+/* ************************************************************************************************************************************************************
+						《 공통 레이아웃 스타일 》
+************************************************************************************************************************************************************ */
+
+/* ============================== [ 레이아웃 리셋 Layout Reset ] ========================================================================================== */
+/* Reset */
+html,body,div,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,
+abbr,address,big,cite,code,del,dfn,font,figure,figcaption,img,ins,q,s,samp,small,strike,sub,sup,tt,var,
+b,u,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td {font:20px/1.2em 'Pretendard',sans-serif;}
+button,input,textarea {font:20px/1.2em 'Pretendard',sans-serif;}
+select {font:20px/1.2em 'Pretendard',sans-serif;}
+::selection {color:#fff; background-color:#2299FF;}
+.go_view {position:absolute; left:0; top:0; height:100%; width:100%;}
+figure img {display: block; width: 100%; height: auto; object-fit: cover;}
+.inner {margin: 0 auto; width: 100%; max-width: 1230px; padding: 0 15px; box-sizing: border-box;}
+
+/* ============================== [ 공통레이아웃 ] ========================================================================================== */
+/* tab */
+.tab_con ul li{display: none;}
+.tab_con ul li.on{display: block;}
+
+.tab_wrap {margin-bottom:60px; display:flex; justify-content:center;}
+.tab_wrap li ~ li {margin-left:43px;}
+.tab_wrap li a {display:flex; align-items:center; justify-content:center; width:260px; height:80px; font-size:30px; font-weight:700; background-color:#D9D9D9;}
+.tab_wrap li.on a {color:#2998FF;}
+
+/* ============================== [ #header ] ========================================================================================== */
+#header {position:fixed; left:0; top:0; width:100%; z-index:100; box-sizing:border-box;background-color: rgba(255, 255, 255, 0.5);}
+#header.nav_on {background-color: #fff !important;}
+#header .inner {display:flex; align-items:center; justify-content:space-between;}
+#header h1 a {display:block; width:200px; height:42px;}
+#header h1 a img {display:block; width:100%; height:auto;}
+#header nav .menu_wrap {display:flex;}
+#header nav .dept_01 {position:relative;}
+#header nav .dept_01 ~ .dept_01 {margin-left:40px;}
+#header nav .dept_01 > a {font-weight:700; padding:55px 0 61px; display:block; min-width: 140px; box-sizing:border-box; text-align:center;}
+
+#header nav .dept_02 {padding-top:6px; position:absolute; left:0; top:100%; width:100%; text-align:center;}
+#header nav .dept_02 li ~ li {margin-top:15px;}
+#header nav .dept_02 a {font-size:18px; font-weight:500;}
+#header .bg_nav {position:absolute; left:0; top:100%; background-color:#fff; height:260px; width:100%; z-index:-1;}
+
+#header nav .dept_02,#header .bg_nav {display:none;}
+
+.btn_allmenu,
+.btn_allmenu_close{display: none;}
+
+/* ============================== [ #footer ] ========================================================================================== */
+#footer {background-color:#292929;}
+#footer .inner{padding-top:147px;padding-bottom: 40px;}
+#footer h1 {margin-bottom:12px; line-height:1.154em; font-size:26px; font-weight:700; color:#fff;}
+#footer p {line-height:1.667em; font-size:18px; font-weight:500; color:#fff; margin-top:4px;}
+#footer .group {display:flex;}
+#footer .group p {margin-top:0;}
+#footer .group.tp_01 p ~ p {margin-left:28px;}
+#footer .group.tp_02 p ~ p {margin-left:40px;}
+#footer .f_sns {margin-top:45px;}
+#footer .f_sns ul {display:flex;}
+#footer .f_sns ul li ~ li {margin-left:20px;}
+#footer .f_sns ul li a {display:block; width:40px; height:40px; border-radius: 50%;}
+
+
+/* ============================== [ floating ] ========================================================================================== */
+.floating {position:fixed; right:120px; bottom:100px; z-index:10;}
+.floating a {display:block; width:80px; height:80px;}
+.floating a img {width: 100%; height: auto;}
+@media only screen and (min-width: 1201px) {
+	#header.on{background-color: rgba(255, 255, 255, 0.8);}
+}
+@media only screen and (max-width: 1200px){
+	#header{padding: 40px 0;background-color: #fff; box-shadow: 0 4px 4px 0 rgba(0,0,0,0.07);}
+	#header h1 a{width: 100px;height: 20px;}
+	#header.nav_on:before{display: block;content: '';position: fixed;left: 0;top: 0;z-index: 20;width: 100vw;height: 100vh;background-color: rgba(0,0,0,0.7);}
+	#header nav{position: absolute;top: 0;right: -100%;z-index: 30;width: 70%;height: 100vh;background-color: #fff;}
+	#header nav .menu_wrap{display: block;margin-top: 50px;}
+	#header nav .dept_01 ~ .dept_01{margin-left: 0;margin-top: 16px;}
+	#header nav .dept_01 > a{position: relative;padding: 10px;padding-right: 36px;}
+	#header nav .dept_01 > a:after{display: block;content: '';position: absolute;top: 8px;right: 10px;width: 30px;height: 30px;background-image: url('../images/ico_allmenu_arrow.svg');-webkit-transition: 0.3s;transition: 0.3s;}
+	#header nav .dept_01.on > a:after{-webkit-transform: rotate(-180deg);transform: rotate(-180deg);}
+	#header nav .dept_02{position: static;left: auto;top: auto;padding-bottom: 28px;}
+	#header nav .dept_02 li {padding-right: 26px;}
+	.btn_allmenu{display: block;position: absolute;top: 50%;right: 15px;-webkit-transform: translateY(-50%);transform: translateY(-50%);width: 30px;height: 30px;background-image: url('../images/ico_allmenu.svg')}
+	.btn_allmenu_close{display: block;position: absolute;left: -30px;top: 20px;width: 24px;height: 24px;background-image: url('../images/ico_allmenu_close.svg');}
+
+	#footer .inner{padding: 30px 15px;}
+	#footer h1{margin-bottom: 6px;font-size: 18px;}
+	#footer .group{display: block;}
+	#footer .group p{font-size: 14px;line-height: 1.4em;}
+	#footer .group.tp_01 p ~ p{margin-left: 0;}
+	#footer p{margin-top: 6px;font-size: 14px;line-height: 1.4em;font-weight: 400;word-break: keep-all;}
+	#footer .group.tp_02{margin-top: 4px;}
+	#footer .group.tp_02 p ~ p{margin-left: 0;}
+
+	#footer .f_sns{margin-top: 15px;}
+
+	.floating{right: 20px; bottom: 40px;}
+	.floating a {width: 60px; height: 60px;}
+}
+@media only screen and (max-width: 768px){
+	.floating{right: 20px; bottom: 20px;}
+	.floating a {width: 50px; height: 50px;}
+}
+@media only screen and (max-width: 360px){
+	#footer .f_sns ul{justify-content: space-between;}
+	#footer .f_sns ul li ~ li{margin-left: 0;}
+}
